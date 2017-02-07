@@ -1,0 +1,13 @@
+{
+  "name": "gulp-build-babel-standard",
+  "version": "0.0.2",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha --compilers js:babel-register --require ./test-helpers/babel-hook.js .\\{,!(node_modules)\\**\\}*.tests.js"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-sourcemaps": "^2.4.1"
+  },
+  "main": "standard-gulp-babel.js"
+}
